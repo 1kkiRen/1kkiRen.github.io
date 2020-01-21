@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>paint</title>
+
+<style>
+    body{
+        background: linear-gradient(to right, powderblue, pink);
+    }
+canvas{    
+    border: solid;
+    background-color: white;
+    }
+
+.clear{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 15px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+.clear:hover {
+    background-position: right center;}
+    
+    
+.red_color{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(255, 145, 0) 51%, rgb(251, 255, 0) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    margin-left: 15rem;
+}
+.red_color:hover {
+    background-position: right center;
+    }
+.yellow_color{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(255, 251, 0) 0%, rgb(255, 145, 0) 51%, rgb(255, 0, 0) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+.yellow:hover {
+    background-position: right center;
+    }
+    .green_color{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(20, 119, 0) 0%, rgb(102, 156, 0) 51%, rgb(141, 151, 0) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+.green_color:hover {
+    background-position: right center;
+    } 
+    .blue_color{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(0, 38, 255) 0%, rgb(0, 195, 255) 51%, rgb(0, 247, 255) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+.blue_color:hover {
+    background-position: right center;
+    } 
+.black_color{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+.black_color:hover {
+    background-position: right center;
+    }
+.size_p{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    margin-left: 10rem;
+    
+}
+.size_p:hover {
+    background-position: right center;
+    }
+.size_m{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+.size_m:hover {
+    background-position: right center;
+    }
+.size{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+.size:hover {
+    background-position: right center;
+    }
+
+    .butt{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+.butt:hover {
+    background-position: right center;
+    }
+
+    .round{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+.round:hover {
+    background-position: right center;
+    }
+
+    .square{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+.square:hover {
+    background-position: right center;
+    }
+</style>
+
+</head>
+<body>
+    
+        <button class="clear" id="clear">Clear</button class="clear">
+            <button class="butt" id="butt">butt</button>
+            <button class="round" id="round">round</button>
+            <button class="square" id="square">square</button>
+            <button class="red_color" id="red_color">Red</button>
+            <button class="yellow_color" id="yellow_color">Yellow</button>
+            <button class="green_color" id="green_color">Green</button>
+            <button class="blue_color" id="blue_color">Blue</button>
+            <button class="black_color" id="black_color">Black</button>
+
+            <button class="size_p" id="size_p">+</button>
+            <div class="size" id="size"></div>
+            <button class="size_m" id="size_m">-</button>
+            
+    
+    <canvas class="canvas" id="canvas" width="1795" height="830" ></canvas>
+    <script>
+
+    document.getElementById('size').innerHTML = lineWidth;
+    var canvas = document.getElementById("canvas")
+    var paint = canvas.getContext("2d")
+    var clear = document.getElementById("clear")
+    var red_color = document.getElementById("red_color")
+    var yellow_color = document.getElementById("yellow_color")
+    var green_color = document.getElementById("green_color")
+    var blue_color = document.getElementById("blue_color")
+    var black_color = document.getElementById("black_color")
+    var size_p = document.getElementById("size_p")
+    var size_m = document.getElementById("size_m")
+    var butt = document.getElementById("butt")
+    var round = document.getElementById("round")
+    var square = document.getElementById("square")
+
+    var lineWidth=8
+    size.innerHTML=lineWidth
+
+    clear.addEventListener("click", function (e){
+        paint.clearRect(0, 0, canvas.width, canvas.height);
+    })   
+    
+    red_color.addEventListener("click", function(){
+        paint.strokeStyle = "rgb(255,0,0)"
+    })
+    yellow_color.addEventListener("click", function(){
+        paint.strokeStyle = "rgb(255,255,0)"
+    })
+    green_color.addEventListener("click", function(){
+        paint.strokeStyle = "rgb(0,255,0)"
+    })
+    blue_color.addEventListener("click", function(){
+        paint.strokeStyle = "rgb(0,0,255)"
+    })
+    black_color.addEventListener("click", function(){
+        paint.strokeStyle = "rgb(0,0,0)"
+    })
+
+    black_color.addEventListener("click", function(){
+        paint.strokeStyle = "rgb(0,0,0)"
+    })
+
+    size_p.addEventListener("click", function(){        
+            lineWidth=lineWidth+1
+            size.innerHTML=lineWidth
+    })
+
+    butt.addEventListener("click", function(){        
+            paint.lineCap = "butt"
+    })
+
+    round.addEventListener("click", function(){        
+            paint.lineCap = "round"
+    })
+
+    square.addEventListener("click", function(){        
+            paint.lineCap = "square"
+    })
+
+    size_m.addEventListener("click", function(){
+        if(lineWidth>1){
+            lineWidth=lineWidth-1
+        }
+        
+        size.innerHTML=lineWidth
+    })
+
+    canvas.onmousemove = function drawIfPressed(e){        
+        paint.lineWidth = lineWidth
+        var x=e.offsetX
+        var y=e.offsetY
+        var dx=e.movementX
+        var dy=e.movementY
+
+        if(e.buttons>0) {
+            paint.beginPath()
+            paint.moveTo(x,y)
+            paint.lineTo(x-dx,y-dy)
+            paint.stroke()
+            paint.closePath()
+      }
+    }
+
+       
+    </script>
+</body>
+</html>
