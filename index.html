@@ -51,11 +51,27 @@ canvas{
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0,0,0,.1);
     transition: .5s;
-    margin-left: 15rem;
+   
+    position: relative;
 }
 .red_color:hover {
     background-position: right center;
     }
+.color_change{
+    position: absolute;
+    
+    left:0;
+    bottom:98px;
+    right:0;
+    top:0;
+    background:rgba(255,255,255, 0.7);
+    
+    display:none;
+}
+.red_color:hover .color_change{
+    display: block;
+    }
+
 .yellow_color{
     text-decoration: none;
     outline: none;
@@ -134,6 +150,26 @@ canvas{
     
 }
 .black_color:hover {
+    background-position: right center;
+    }
+    .rubber{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: black;
+    padding: 15px 25px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(116, 116, 116) 51%, rgb(82, 82, 82) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+.rubber:hover {
     background-position: right center;
     }
 .size_p{
@@ -260,6 +296,75 @@ canvas{
 .square:hover {
     background-position: right center;
     }
+
+ul {
+        text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: 1s;
+    margin-left: 10rem;
+}
+
+li {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: 1s;
+}
+
+
+
+ ul ul {
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
+    visibility: hidden; 
+    position: absolute;
+  transition: 1s ;
+  opacity: 0;
+  display: none;
+}
+
+ ul:hover > ul,
+ ul ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ ul ul li {
+    clear: both;
+  
+}
+.menu_btn{
+    text-decoration: none;
+    outline: none;    
+    color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: 1s;
+    }
+
 </style>
 
 </head>
@@ -268,13 +373,19 @@ canvas{
         <button class="clear" id="clear">Clear</button class="clear">
             <button class="butt" id="butt">butt</button>
             <button class="round" id="round">round</button>
-            <button class="square" id="square">square</button>
-            <button class="red_color" id="red_color">Red</button>
-            <button class="yellow_color" id="yellow_color">Yellow</button>
-            <button class="green_color" id="green_color">Green</button>
-            <button class="blue_color" id="blue_color">Blue</button>
-            <button class="black_color" id="black_color">Black</button>
-
+            <button class="square" id="square">square</button>            
+            
+                <ul><button class="menu_btn">Изменение цвета</button>
+                    <ul class="dropdown">
+                        <li><button class="red_color" id="red_color">Red</button></li>
+                        <li><button class="yellow_color" id="yellow_color">Yellow</button></li>
+                        <li><button class="green_color" id="green_color">Green</button></li>
+                        <li><button class="blue_color" id="blue_color">Blue</button></li>
+                        <li><button class="black_color" id="black_color">Black</button></li>
+                        <li><button class="rubber" id="rubber">Rubber</button></li>
+                    </ul>
+                </ul>
+                
             <button class="size_p" id="size_p">+</button>
             <div class="size" id="size"></div>
             <button class="size_m" id="size_m">-</button>
@@ -292,6 +403,7 @@ canvas{
     var green_color = document.getElementById("green_color")
     var blue_color = document.getElementById("blue_color")
     var black_color = document.getElementById("black_color")
+    var rubber = document.getElementById("rubber")
     var size_p = document.getElementById("size_p")
     var size_m = document.getElementById("size_m")
     var butt = document.getElementById("butt")
@@ -321,8 +433,9 @@ canvas{
         paint.strokeStyle = "rgb(0,0,0)"
     })
 
-    black_color.addEventListener("click", function(){
-        paint.strokeStyle = "rgb(0,0,0)"
+    rubber.addEventListener("click", function(){
+        paint.strokeStyle = "rgb(255,255,255)"
+        paint.lineCap = "square"
     })
 
     size_p.addEventListener("click", function(){        
