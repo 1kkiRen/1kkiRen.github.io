@@ -335,9 +335,9 @@ li {
     background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
     visibility: hidden; 
     position: absolute;
-  transition: 1s ;
-  opacity: 0;
-  display: none;
+    transition: 1s ;
+    opacity: 0;
+    display: none;
 }
 
  ul:hover > ul,
@@ -345,6 +345,8 @@ li {
   visibility: visible;
   opacity: 1;
   display: block;
+  left: 4rem;
+  top: 3.9rem;
 }
 
  ul ul li {
@@ -371,11 +373,15 @@ li {
 <body>
     
         <button class="clear" id="clear">Clear</button class="clear">
-            <button class="butt" id="butt">butt</button>
-            <button class="round" id="round">round</button>
-            <button class="square" id="square">square</button>            
+            <ul><button class="menu_btn">brush changer</button>
+                <ul class="dropdown">
+                    <li><button class="butt" id="butt">butt</button></li>    
+                    <li> <button class="round" id="round">round</button>  </li> 
+                    <li><button class="square" id="square">square</button> </li>       
+                </ul>
+            </ul>        
             
-                <ul><button class="menu_btn">Изменение цвета</button>
+                <ul><button class="menu_btn">color changer</button>
                     <ul class="dropdown">
                         <li><button class="red_color" id="red_color">Red</button></li>
                         <li><button class="yellow_color" id="yellow_color">Yellow</button></li>
@@ -389,6 +395,8 @@ li {
             <button class="size_p" id="size_p">+</button>
             <div class="size" id="size"></div>
             <button class="size_m" id="size_m">-</button>
+
+            
             
     
     <canvas class="canvas" id="canvas" width="1795" height="830" ></canvas>
@@ -479,7 +487,14 @@ li {
       }
     }
 
+
+
+    
+
+
        
     </script>
+
+
 </body>
 </html>
