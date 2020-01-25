@@ -366,6 +366,7 @@ li {
     box-shadow: 0 0 20px rgba(0,0,0,.1);
     transition: 1s;
     }
+    
 
 </style>
 
@@ -395,11 +396,13 @@ li {
             <button class="size_p" id="size_p">+</button>
             <div class="size" id="size"></div>
             <button class="size_m" id="size_m">-</button>
+            
+        
 
             
             
     
-    <canvas class="canvas" id="canvas" width="1795" height="830" ></canvas>
+    <canvas class="canvas" id="canvas" width="1795" height="830"></canvas>
     <script>
 
     document.getElementById('size').innerHTML = lineWidth;
@@ -417,9 +420,13 @@ li {
     var butt = document.getElementById("butt")
     var round = document.getElementById("round")
     var square = document.getElementById("square")
+    var BAN = document.getElementById("BAN")
 
     var lineWidth=8
     size.innerHTML=lineWidth
+    paint.lineCap = "round"
+
+    
 
     clear.addEventListener("click", function (e){
         paint.clearRect(0, 0, canvas.width, canvas.height);
@@ -446,17 +453,19 @@ li {
         paint.lineCap = "square"
     })
 
+    
+
     size_p.addEventListener("click", function(){        
             lineWidth=lineWidth+1
             size.innerHTML=lineWidth
     })
 
-    butt.addEventListener("click", function(){        
-            paint.lineCap = "butt"
-    })
-
     round.addEventListener("click", function(){        
             paint.lineCap = "round"
+    })
+
+    butt.addEventListener("click", function(){        
+            paint.lineCap = "butt"
     })
 
     square.addEventListener("click", function(){        
@@ -489,7 +498,7 @@ li {
 
 
 
-    
+
 
 
        
