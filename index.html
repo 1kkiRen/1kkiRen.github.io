@@ -297,8 +297,16 @@ canvas{
     background-position: right center;
     }
 
-ul {
-        text-decoration: none;
+
+
+    .menu ul {
+      
+      padding-left: 20px;
+      display: none;
+    }
+
+    .menu .title {
+    text-decoration: none;
     outline: none;
     display: inline-block;
     color: white;
@@ -311,52 +319,32 @@ ul {
     background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0,0,0,.1);
-    transition: 1s;
-    margin-left: 10rem;
-}
+    transition: .5s;
+    }
 
-li {
+    .menu.open ul {
+      display:flex;
+      text-decoration: none;
+    }
+
+
+
+
+
+    .menu1 ul {
+      
+      
+      padding-left: 20px;
+      display: none;
+    }
+
+    .menu1 .title1 {
     text-decoration: none;
     outline: none;
     display: inline-block;
     color: white;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
-    background-size: 200% auto;
-    box-shadow: 0 0 20px rgba(0,0,0,.1);
-    transition: 1s;
-}
-
-
-
- ul ul {
-    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
-    visibility: hidden; 
-    position: absolute;
-    transition: 1s ;
-    opacity: 0;
-    display: none;
-}
-
- ul:hover > ul,
- ul ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  left: 4rem;
-  top: 3.9rem;
-}
-
- ul ul li {
-    clear: both;
-  
-}
-.menu_btn{
-    text-decoration: none;
-    outline: none;    
-    color: white;
+    padding: 15px 20px;
+    margin: 10px 5px;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -364,9 +352,25 @@ li {
     background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(116, 116, 116) 51%, rgb(255, 255, 255) 100%);
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0,0,0,.1);
-    transition: 1s;
+    transition: .5s;
     }
-    
+
+    .menu1.open ul {
+      display: block;
+    }
+
+    #preload{
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    background: #FF0000 url(http://hello-site.ru//main/images/preloads/bars.svg) center center no-repeat;
+    background-size:138px;
+    }
 
 </style>
 
@@ -374,34 +378,38 @@ li {
 <body>
     
         <button class="clear" id="clear">Clear</button class="clear">
-            <ul><button class="menu_btn">brush changer</button>
-                <ul class="dropdown">
-                    <li><button class="butt" id="butt">butt</button></li>    
-                    <li> <button class="round" id="round">round</button>  </li> 
-                    <li><button class="square" id="square">square</button> </li>       
-                </ul>
-            </ul>        
             
-                <ul><button class="menu_btn">color changer</button>
-                    <ul class="dropdown">
-                        <li><button class="red_color" id="red_color">Red</button></li>
+            <div id="menu_btn" class="menu">
+                
+                <span class="title">brush changer</span>
+                <ul>
+                  <li><button class="butt" id="butt">butt</button></li>    
+                    <li> <button class="round" id="round">round</button>  </li> 
+                    <li><button class="square" id="square">square</button> </li>
+                </ul>
+               
+            </div>
+            
+            <div id="menu_btn1" class="menu1">
+                  
+                <span class="title1">color changer</span>
+                <ul>
+                  <li><button class="red_color" id="red_color">Red</button></li>
                         <li><button class="yellow_color" id="yellow_color">Yellow</button></li>
                         <li><button class="green_color" id="green_color">Green</button></li>
                         <li><button class="blue_color" id="blue_color">Blue</button></li>
                         <li><button class="black_color" id="black_color">Black</button></li>
                         <li><button class="rubber" id="rubber">Rubber</button></li>
-                    </ul>
                 </ul>
                 
+            </div>
+            
             <button class="size_p" id="size_p">+</button>
             <div class="size" id="size"></div>
             <button class="size_m" id="size_m">-</button>
             
         
-
-            
-            
-    
+ 
     <canvas class="canvas" id="canvas" width="1795" height="830"></canvas>
     <script>
 
@@ -421,11 +429,29 @@ li {
     var round = document.getElementById("round")
     var square = document.getElementById("square")
     var BAN = document.getElementById("BAN")
+    var menuElem = document.getElementById('menu_btn');
+    var titleElem = menuElem.querySelector('.title');
+    var menuElem1 = document.getElementById('menu_btn1');
+    var titleElem1 = menuElem1.querySelector('.title1');
+
+    
 
     var lineWidth=8
     size.innerHTML=lineWidth
     paint.lineCap = "round"
 
+    
+
+    titleElem.onclick = function() {
+      menuElem.classList.toggle('open');
+    };
+
+    
+
+    titleElem1.onclick = function() {
+      menuElem1.classList.toggle('open');
+    };
+    
     
 
     clear.addEventListener("click", function (e){
@@ -503,7 +529,24 @@ li {
 
        
     </script>
+<div id="preload"></div>
 
+<script>
+var preloader = document.getElementById("preload");
+function fadeOutnojquery(el){
+  el.style.opacity = 1;
+  var interpreloader = setInterval(function(){
+    el.style.opacity = el.style.opacity - 0.05;
+    if (el.style.opacity <=0.05){
+       clearInterval(interpreloader);
+       preloader.style.display = "none";
+       }
+       },16);
+       }window.onload = function(){setTimeout(function(){
+         fadeOutnojquery(preloader);
+         },1000);
+         };
+         </script>
 
 </body>
 </html>
