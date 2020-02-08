@@ -8,7 +8,7 @@
 
 <style>
     body{
-        background: linear-gradient(to right, powderblue, pink);
+        background: linear-gradient(to right, rgb(255, 0, 0), rgb(1, 90, 255));
     }
 canvas{    
     border: solid;
@@ -26,7 +26,7 @@ canvas{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-image: linear-gradient(to right, rgb(158, 190, 239) 0%, #4830F0 51%, #9EEFE1 100%);
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0,0,0,.1);
     transition: .5s;
@@ -431,25 +431,19 @@ canvas{
     var menuElem1 = document.getElementById('menu_btn1');
     var titleElem1 = menuElem1.querySelector('.title1');
 
-    
 
     var lineWidth=8
     size.innerHTML=lineWidth
     paint.lineCap = "round"
-
-    
+  
 
     titleElem.onclick = function() {
       menuElem.classList.toggle('open');
     };
 
-    
-
     titleElem1.onclick = function() {
       menuElem1.classList.toggle('open');
-    };
-    
-    
+    }; 
 
     clear.addEventListener("click", function (e){
         paint.clearRect(0, 0, canvas.width, canvas.height);
@@ -474,9 +468,7 @@ canvas{
     rubber.addEventListener("click", function(){
         paint.strokeStyle = "rgb(255,255,255)"
         paint.lineCap = "square"
-    })
-
-    
+    })   
 
     size_p.addEventListener("click", function(){        
             lineWidth=lineWidth+1
@@ -517,33 +509,29 @@ canvas{
             paint.stroke()
             paint.closePath()
       }
-    }
-
-
-
-
-
-
-       
+    }  
     </script>
 <div id="preload"></div>
 
 <script>
 var preloader = document.getElementById("preload");
+
 function fadeOutnojquery(el){
   el.style.opacity = 1;
   var interpreloader = setInterval(function(){
     el.style.opacity = el.style.opacity - 0.05;
     if (el.style.opacity <=0.05){
-       clearInterval(interpreloader);
-       preloader.style.display = "none";
-       }
-       },16);
-       }window.onload = function(){setTimeout(function(){
-         fadeOutnojquery(preloader);
-         },1000);
-         };
-         </script>
+            clearInterval(interpreloader);
+            preloader.style.display = "none";
+        }
+    },16);
+}
+window.onload = function(){setTimeout(function(){
+    fadeOutnojquery(preloader);
+    },1000);
+};
+
+</script>
 
 </body>
 </html>
