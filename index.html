@@ -393,12 +393,12 @@ canvas{
                   
                 <span class="title1">color changer</span>
                 <ul>
-                  <li ><button class="red_color" id="red_color">Red</button></li>
-                        <li><button class="yellow_color" id="yellow_color">Yellow</button></li>
-                        <li><button class="green_color" id="green_color">Green</button></li>
-                        <li><button class="blue_color" id="blue_color">Blue</button></li>
-                        <li><button class="black_color" id="black_color">Black</button></li>
-                        <li><button class="rubber" id="rubber">Rubber</button></li>
+                <li><button class="red_color" id="red_color">Red</button></li>
+                <li><button class="yellow_color" id="yellow_color">Yellow</button></li>
+                <li><button class="green_color" id="green_color">Green</button></li>
+                <li><button class="blue_color" id="blue_color">Blue</button></li>
+                <li><button class="black_color" id="black_color">Black</button></li>
+                <li><button class="rubber" id="rubber">Rubber</button></li>
                 </ul>
                 
             </div>
@@ -437,6 +437,8 @@ canvas{
     var lineWidth=8
     size.innerHTML=lineWidth
     paint.lineCap = "round"
+
+    var prevCap = 'round'
   
 
     titleElem.onclick = function() {
@@ -453,18 +455,23 @@ canvas{
     
     red_color.addEventListener("click", function(){
         paint.strokeStyle = "rgb(255,0,0)"
+        paint.lineCap = prevCap 
     })
     yellow_color.addEventListener("click", function(){
         paint.strokeStyle = "rgb(255,255,0)"
+        paint.lineCap = prevCap 
     })
     green_color.addEventListener("click", function(){
         paint.strokeStyle = "rgb(0,255,0)"
+        paint.lineCap = prevCap 
     })
     blue_color.addEventListener("click", function(){
         paint.strokeStyle = "rgb(0,0,255)"
+        paint.lineCap = prevCap 
     })
     black_color.addEventListener("click", function(){
         paint.strokeStyle = "rgb(0,0,0)"
+        paint.lineCap = prevCap 
     })
 
     rubber.addEventListener("click", function(){
@@ -479,14 +486,17 @@ canvas{
 
     round.addEventListener("click", function(){        
             paint.lineCap = "round"
+            prevCap = "round"
     })
 
     butt.addEventListener("click", function(){        
             paint.lineCap = "butt"
+            prevCap = "butt"
     })
 
     square.addEventListener("click", function(){        
             paint.lineCap = "square"
+            prevCap = "square"
     })
 
     size_m.addEventListener("click", function(){
@@ -514,6 +524,8 @@ canvas{
     }  
     </script>
 <div id="preload"></div>
+
+
 
 <script>
 var preloader = document.getElementById("preload");
