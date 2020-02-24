@@ -738,7 +738,7 @@ canvas{
 
 		seeds = [];
 		particles = [];
-
+        var aud = new Audio('boom3.mp3');
 		const fwkPtcIniV = 0.5;
 		const fwkSedIniV = 0.5;
 		const fwkPtcIniT = 2500;
@@ -754,6 +754,7 @@ canvas{
 		{
 			var fwkPtc = document.createElement("DIV");
 			fwkPtc.setAttribute('class', 'fireWorkParticle');
+            aud.play();
 			fwkPtc.time = fwkPtcIniT;
 			while(angle > 360)
 				angle -= 360;
@@ -820,6 +821,7 @@ canvas{
 				seeds = [];
 			seeds.push(fwkSed);
 			return fwkSed;
+            
 		}
 		
 		function newFireWorkStar(x, y)
