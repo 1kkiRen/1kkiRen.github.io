@@ -41,30 +41,6 @@
     text-transform: uppercase;
 }
 
-.contact .content .col-left form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.contact .content .col-left .field {
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-.contact .content .col-left form .field input, .contact .content .col-left .field textarea {
-    width: 100%;
-    padding: 0.8rem 1rem;
-    border: 2px solid #fff6ec;
-    background-color: transparent;
-    color: #fff6ec;
-    font-size: 1rem;
-    font-weight: 500;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-}
 
 .contact .content .col-left .btn {
     margin-top: 1rem;
