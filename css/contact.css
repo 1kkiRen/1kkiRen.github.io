@@ -31,6 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .contact .content .col-left h2 {
@@ -65,21 +66,12 @@
     transition: all 0.3s ease-in-out;
 }
 
-.contact .content .col-left .field input:focus, .contact .content .col-left .field textarea:focus {
-    border-color: #fff6ec;
-}
-
-.contact .content .col-left .field textarea {
-    resize: none;
-    height: 150px;
-}
-
 .contact .content .col-left .btn {
     margin-top: 1rem;
     display: inline-block;
     padding: 0.8rem 2.5rem;
     border: 2px solid #fff6ec;
-    color: #1c2333;
+    color: #fff6ec;
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
