@@ -24,6 +24,9 @@ function showList() {
 }
 
 submit.addEventListener('click', () => {
+    if (!validateEmail()) {
+        return;
+    }
     const params = new URLSearchParams();
     params.append('email', email.value);
     console.log(params.toString());
@@ -64,3 +67,16 @@ submit.addEventListener('click', () => {
     requestedContent.scrollIntoView({ behavior: 'smooth' });
 
 });
+
+const emailEnd = '@innopolis.university';
+function validateEmail() {
+    if (email.value.endsWith(emailEnd)) {
+        return true;
+    } else {
+        alert('Please enter your @innopolis.university email');
+        return false;
+    }
+}
+
+
+

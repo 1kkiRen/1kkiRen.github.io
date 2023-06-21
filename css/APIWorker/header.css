@@ -106,4 +106,5 @@ header .request-sender button {
 header .request-sender button:hover {
     background-color: #fff6ec;
     color: #1c2333;
+    transition: all 0.3s ease-in-out;
 }
