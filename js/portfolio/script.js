@@ -13,14 +13,18 @@ const socialButton = document.getElementById('social');
 const socialSection = document.getElementById('social-media-section');
 
 const logo = document.getElementById('logo');
-const list = document.getElementById('list');
 
-function showList() {
-    list.classList.toggle('show');
+const mainTitle = document.getElementById('main-title');
+const dropdownContent = document.getElementById('dropdown-content');
+
+
+function toggleDropdown() {
+    dropdownContent.classList.toggle('show');
 }
 
-logo.addEventListener('mouseover', showList, true);
-logo.addEventListener('mouseout', showList, false);
+mainTitle.addEventListener('mouseover', toggleDropdown, true);
+mainTitle.addEventListener('mouseout', toggleDropdown, false);
+
 
 window.onscroll = function() {
     const header = document.getElementById("header");

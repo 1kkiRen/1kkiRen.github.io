@@ -16,32 +16,54 @@ header.shrink {
     transition: all 1s ease-in-out;
 }
 
-header .list {
+header .dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    transition: all 0.3s ease-in-out;
+}
+
+header .dropdown-content {
     opacity: 0;
     height: 0;
     overflow: hidden;
-    transition: opacity 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-header .list.show {
+header .dropdown-content.show {
     opacity: 1;
-    height: auto;
+    height: 3rem;
 }
 
-header .list li {
+header .dropdown-content li {
     list-style: none;
     transition: all 0.3s ease-in-out;
 }
 
-header .list li a {
+header .dropdown-content li a {
     text-decoration: none;
     color: #fff6ec;
     font-size: 1.5rem;
     transition: all 0.3s ease-in-out;
 }
 
-header .list li:hover {
+header .dropdown-content li:hover {
     border-bottom: 2px solid #fff6ec;
+}
+
+header .main-title .dropdown .arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff6ec;
+    transition: all 0.3s ease-in-out;
+}
+
+header .main-title:hover .arrow {
+    border-top: 5px solid #1c2333;
+    transition: all 0.3s ease-in-out;
 }
 
 header .main-title {
@@ -108,3 +130,4 @@ header .request-sender button:hover {
     color: #1c2333;
     transition: all 0.3s ease-in-out;
 }
+

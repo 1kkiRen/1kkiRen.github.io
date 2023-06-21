@@ -6,22 +6,31 @@ const title = document.getElementById('title');
 const image = document.getElementById('image');
 const date = document.getElementById('date');
         
-const list = document.getElementById('list');
+
 const mainTitle = document.getElementById('main-title');
         
-mainTitle.addEventListener('mouseover', showList, true);
-mainTitle.addEventListener('mouseout', showList, false);
 
 const header = document.getElementById('header');
-        
+
 const requestedContent = document.getElementById('requested-content');
 const requestSender = document.getElementById('request-sender');
 const requestSenderP = document.getElementById('request-sender-p');
-        
 
-function showList() {
-    list.classList.toggle('show');
+
+const dropdown = document.getElementById('dropdown');
+const dropdownContent = document.getElementById('dropdown-content');
+
+
+function toggleDropdown() {
+    dropdownContent.classList.toggle('show');
 }
+
+mainTitle.addEventListener('mouseover', toggleDropdown, true);
+mainTitle.addEventListener('mouseout', toggleDropdown, false);
+
+
+
+
 
 submit.addEventListener('click', () => {
     if (!validateEmail()) {
