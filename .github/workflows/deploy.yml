@@ -1,25 +1,14 @@
-name: Deploy to GitHub Pages
-
-on:
+name: Deploy to GitHub pageson:
   push:
-    branches:
-      - main
-
+    branches: [ main ]
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Install dependencies and build
-        run: |
-          npm install
-          npm run build 
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: dist
+    - uses: actions/checkout@v2
+    - name: Generate static files
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+    - run: npm ci
+    - run: npm run build
