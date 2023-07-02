@@ -34,11 +34,11 @@ interface ComicResponse {
     year: number;
     month: number;
     day: number;
-  }
+}
   
-  interface ApiDataResponse {
+interface ApiDataResponse {
     id: number;
-  }
+}
 
 
 submit.addEventListener('click', () => {

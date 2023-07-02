@@ -65,6 +65,3 @@ contactButton.addEventListener('click', () => {
 socialButton.addEventListener('click', () => {
     socialSection.scrollIntoView({ behavior: 'smooth' });
 });
-
-
-
