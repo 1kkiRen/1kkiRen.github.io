@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config rollup.config.js",
-    "watch": "rollup --config rollup.config.js --watch"
+    "watch": "rollup --config rollup.config.js --watch",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/1kkiRen/1kkiRen.github.io/issues"
   },
-  "homepage": "https://github.com/1kkiRen/1kkiRen.github.io#readme",
+  "homepage": "https://1kkiRen.github.io/",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.2",
     "@rollup/plugin-node-resolve": "^15.1.0",
@@ -26,6 +27,7 @@
     "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-typescript": "^11.1.2",
     "date-fns": "^2.30.0",
+    "gh-pages": "^5.0.0",
     "rollup": "^3.26.0",
     "tslib": "^2.6.0"
   }
