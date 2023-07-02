@@ -23,24 +23,33 @@ concurrency:
 
 jobs:
   # Build job
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Install dependencies and build
-        run: |
-          npm install
-          npm run build 
-
-  # Deployment job
   deploy:
+    # Add a dependency to the build job
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
-    needs: build
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          # Replace these commands with the actual build commands
+          npm install
+          npm run build
+
       - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          branch: gh-pages  # Specify the branch to deploy to
+          folder: dist      # Specify the folder containing the built files
+
+      - name: Get Deployment URL
         id: deployment
-        uses: actions/deploy-pages@v2
+        run: echo "::set-output name=page_url::https://${{ github.repository_owner }}.github.io/${{ github.repository }}"
