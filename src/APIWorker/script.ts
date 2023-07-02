@@ -91,6 +91,3 @@ function validateEmail() {
         return false;
     }
 }
-
-
-
