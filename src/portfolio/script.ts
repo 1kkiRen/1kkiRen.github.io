@@ -12,7 +12,7 @@ const contactSection = document.getElementById('contact-section') as HTMLDivElem
 const socialButton = document.getElementById('social') as HTMLDivElement;
 const socialSection = document.getElementById('social-media-section') as HTMLDivElement;
 
-const logo = document.getElementById('logo');
+const logo = document.getElementById('logo') as HTMLDivElement;
 
 const mainTitle = document.getElementById('main-title') as HTMLHeadingElement;
 const dropdownContent = document.getElementById('dropdown-content') as HTMLDivElement;
