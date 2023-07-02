@@ -26,9 +26,6 @@
     "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-typescript": "^11.1.2",
     "date-fns": "^2.30.0",
-    "moment": "^2.29.4",
-    "momentjs": "^2.0.0",
-    "momentsjs": "^5.1.6",
     "rollup": "^3.26.0",
     "tslib": "^2.6.0"
   }
