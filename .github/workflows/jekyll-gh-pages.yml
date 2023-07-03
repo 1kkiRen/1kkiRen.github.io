@@ -23,33 +23,40 @@ concurrency:
 
 jobs:
   # Build job
-  deploy:
-    # Add a dependency to the build job
+  build:
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+      contents: write
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Build
+      - name: Build project
         run: |
-          # Replace these commands with the actual build commands
+          # Add commands to build your project here
+          # For example:
           npm install
           npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
-          branch: gh-pages  # Specify the branch to deploy to
-          folder: dist      # Specify the folder containing the built files
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Get Deployment URL
+      - name: Deploy to GitHub Pages
         id: deployment
-        run: echo "::set-output name=page_url::https://${{ github.repository_owner }}.github.io/${{ github.repository }}"
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+
