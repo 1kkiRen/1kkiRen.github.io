@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -36,6 +36,12 @@ jobs:
         run: |
           npm install
           npm run build
+        
+      - name: Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: dist
 
 
   deploy:
