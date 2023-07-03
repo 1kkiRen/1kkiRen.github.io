@@ -63,8 +63,7 @@ submit.addEventListener('click', () => {
                             image.src = data.img;
                             image.alt = data.alt;
                             date.textContent = new Date(data.year, data.month, data.day).toLocaleDateString();
-                            // dateFromPublish.textContent = formatDistanceToNow(new Date(data.year, data.month, data.day), { addSuffix: true });
-                            
+                            dateFromPublish.textContent = formatDistanceToNow(new Date(data.year, data.month, data.day), { addSuffix: true });
                         })
                     })
                     .catch((error: Error) => {
