@@ -1,3 +1,5 @@
+name: Deploy
+
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -36,21 +38,21 @@ jobs:
           npm run build
 
 
-  # Deploy job
   deploy:
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-      id-token: write
-
     needs: build
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
