@@ -13,7 +13,7 @@
 	<div class="navigation_bar">
 		<div class="main-title" id="main-title">
 			<div class="dropdown" id="dropdown">
-				<a href="{base}/">Portfolio</a>
+				<a href="/">Portfolio</a>
 				<div class="arrow" id="arrow" />
 			</div>
 

@@ -9,7 +9,7 @@
 			<div class="arrow" id="arrow" />
 		</div>
 		<ul class="dropdown-content" id="dropdown-content">
-			<li><a href="{base}/">Portfolio</a></li>
+			<li><a href="/">Portfolio</a></li>
 		</ul>
 	</div>
 
