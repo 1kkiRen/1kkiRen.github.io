@@ -5,21 +5,21 @@
 	import { formatDistanceToNow } from 'date-fns';
 
 	onMount(() => {
-		const email = document.getElementById('email') as HTMLInputElement;
-		const submit = document.getElementById('submit') as HTMLButtonElement;
+		const email = document.querySelector('#email') as HTMLInputElement;
+		const submit = document.querySelector('#submit') as HTMLButtonElement;
 
-		const title = document.getElementById('title') as HTMLHeadingElement;
-		const image = document.getElementById('image') as HTMLImageElement;
-		const date = document.getElementById('date') as HTMLParagraphElement;
-		const dateFromPublish = document.getElementById('date-from-publish') as HTMLParagraphElement;
+		const title = document.querySelector('#title') as HTMLHeadingElement;
+		const image = document.querySelector('#image') as HTMLImageElement;
+		const date = document.querySelector('#date') as HTMLParagraphElement;
+		const dateFromPublish = document.querySelector('#date-from-publish') as HTMLParagraphElement;
 
-		const header = document.getElementById('header') as HTMLDivElement;
+		const header = document.querySelector('header') as HTMLDivElement;
 
-		const requestedContent = document.getElementById('requested-content') as HTMLDivElement;
-		const requestSender = document.getElementById('request-sender') as HTMLDivElement;
+		const requestedContent = document.querySelector('#requested-content') as HTMLDivElement;
+		const requestSender = document.querySelector('#request-sender') as HTMLDivElement;
 
-		const mainTitle = document.getElementById('main-title') as HTMLHeadingElement;
-		const dropdownContent = document.getElementById('dropdown-content') as HTMLDivElement;
+		const mainTitle = document.querySelector('#main-title') as HTMLHeadingElement;
+		const dropdownContent = document.querySelector('#dropdown-content') as HTMLDivElement;
 
 		function toggleDropdown() {
 			dropdownContent.classList.toggle('show');

@@ -1,11 +1,7 @@
-<script>
-	import { base } from '$app/paths';
-</script>
-
 <header id="header">
 	<div class="main-title" id="main-title">
 		<div class="dropdown" id="dropdown">
-			<a href="{base}/APIWorker">API Worker</a>
+			<a href="/APIWorker">API Worker</a>
 			<div class="arrow" id="arrow" />
 		</div>
 		<ul class="dropdown-content" id="dropdown-content">

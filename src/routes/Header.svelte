@@ -1,10 +1,6 @@
 <script lang="ts">
-	import { base } from '$app/paths';
-	const scrollToSec = (selector: string) => {
-		const element = document.querySelector(selector) as HTMLElement;
-		if (window.scrollY === 0) {
-			window.scrollBy(0, 1);
-		}
+	export const scrollToSec = (section: string) => {
+		const element = document.querySelector(section) as HTMLElement;
 		element.scrollIntoView({ behavior: 'smooth' });
 	};
 </script>
@@ -18,7 +14,7 @@
 			</div>
 
 			<ul class="dropdown-content" id="dropdown-content">
-				<li><a href="{base}/APIWorker">APIWorker</a></li>
+				<li><a href="/APIWorker">APIWorker</a></li>
 			</ul>
 		</div>
 		<div class="nav">
@@ -176,8 +172,6 @@
 		}
 	</style>
 	<script lang="ts">
-		let hasScrolled = false;
-
 		const homeSection = document.querySelector('#home-section') as HTMLDivElement;
 
 		const mainTitle = document.querySelector('#main-title') as HTMLHeadingElement;
@@ -199,5 +193,6 @@
 				header.classList.remove('shrink');
 			}
 		};
+		
 	</script>
 </header>
