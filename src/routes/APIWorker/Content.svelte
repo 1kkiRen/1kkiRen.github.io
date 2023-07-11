@@ -34,7 +34,6 @@
 		.requested-content img {
 			width: 40%;
 			height: 40%;
-			/* border-radius: 50%; */
 			object-fit: scale-down;
 			margin-bottom: 1rem;
 			transition: all 0.3s ease-in-out;

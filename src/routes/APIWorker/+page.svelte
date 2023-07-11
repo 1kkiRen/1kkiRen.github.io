@@ -108,6 +108,4 @@
 <section>
 	<Header />
 	<Content />
-	<script lang="ts">
-	</script>
 </section>

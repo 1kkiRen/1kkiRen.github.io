@@ -10,9 +10,9 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		// Github repo name: 1kkiRen.github.io
+
 		paths: {
-			base: dev ? '' : '/1kkiRen.github.io',
+			base: dev ? '' : process.env.BASE_PATH,
 		},
 
 		adapter: adapter()
