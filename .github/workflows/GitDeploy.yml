@@ -32,6 +32,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: 'build/'
+          
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -40,8 +41,11 @@ jobs:
       contents: write
       id-token: write
       
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
     steps:
-      - name: Deploy to GitHub Page
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: build
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
