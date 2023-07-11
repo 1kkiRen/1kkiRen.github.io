@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	const scrollToSec = (selector: string) => {
 		const element = document.querySelector(selector) as HTMLElement;
 		if (window.scrollY === 0) {
@@ -12,12 +13,12 @@
 	<div class="navigation_bar">
 		<div class="main-title" id="main-title">
 			<div class="dropdown" id="dropdown">
-				<a href="/">Portfolio</a>
+				<a href="{base}/">Portfolio</a>
 				<div class="arrow" id="arrow" />
 			</div>
 
 			<ul class="dropdown-content" id="dropdown-content">
-				<li><a href="/APIWorker">APIWorker</a></li>
+				<li><a href="{base}/APIWorker">APIWorker</a></li>
 			</ul>
 		</div>
 		<div class="nav">
