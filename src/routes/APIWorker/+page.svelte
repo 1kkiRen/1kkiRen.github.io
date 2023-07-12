@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Content from './Content.svelte';
-	import Header from './Header.svelte';
+	import APIHeader from './APIHeader.svelte';
+
 	import { onMount } from 'svelte';
 	import { formatDistanceToNow } from 'date-fns';
 
@@ -102,10 +103,9 @@
 
 <svelte:head>
 	<title>API Worker</title>
-	<meta name="description" content="API Worker" />
 </svelte:head>
 
 <section>
-	<Header />
+	<APIHeader />
 	<Content />
 </section>
