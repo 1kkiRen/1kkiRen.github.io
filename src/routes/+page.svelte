@@ -5,7 +5,7 @@
 	import Projects from './Projects.svelte';
 	import Contact from './Contact.svelte';
 	import Social from './Social.svelte';
-	import Header from './Header.svelte';	
+	import Header from './Header.svelte';
 
 	import { onMount } from 'svelte';
 

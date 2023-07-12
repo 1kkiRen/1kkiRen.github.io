@@ -2,10 +2,6 @@
 	import image2 from '$lib/images/image2.jpg';
 </script>
 
-<style>
-	@import '$lib/css/portfolio/about.css';
-</style>
-
 <section class="about" id="about-section">
 	<div class="title">
 		<h2>About Me</h2>
@@ -21,3 +17,7 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	@import '$lib/css/portfolio/about.css';
+</style>

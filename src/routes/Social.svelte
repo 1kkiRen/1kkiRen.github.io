@@ -4,10 +4,6 @@
 	import vk_logo from '$lib/images/vk.png';
 </script>
 
-<style>
-	@import '$lib/css/portfolio/social.css';
-</style>
-
 <section class="social-media" id="social-media-section">
 	<div class="content">
 		<div class="title">
@@ -26,3 +22,7 @@
 		</ul>
 	</div>
 </section>
+
+<style>
+	@import '$lib/css/portfolio/social.css';
+</style>

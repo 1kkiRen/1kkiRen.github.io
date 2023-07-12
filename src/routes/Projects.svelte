@@ -4,10 +4,6 @@
 	import image6 from '$lib/images/image6.jpg';
 </script>
 
-<style>
-	@import '$lib/css/portfolio/projects.css';
-</style>
-
 <section class="projects" id="projects-section">
 	<div class="title">
 		<h2>My Projects</h2>
@@ -40,3 +36,7 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	@import '$lib/css/portfolio/projects.css';
+</style>

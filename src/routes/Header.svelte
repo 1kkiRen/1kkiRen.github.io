@@ -5,10 +5,6 @@
 	};
 </script>
 
-<style>
-	@import '$lib/css/portfolio/header.css';
-</style>
-
 <header id="headerP">
 	<div class="navigation_bar">
 		<div class="main-title" id="main-title">
@@ -58,3 +54,6 @@
 	</div>
 </header>
 
+<style>
+	@import '$lib/css/portfolio/header.css';
+</style>

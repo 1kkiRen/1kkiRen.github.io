@@ -1,7 +1,3 @@
-<style>
-	@import '$lib/css/portfolio/contact.css';
-</style>
-
 <section class="contact" id="contact-section">
 	<div class="title">
 		<h2>Contact Me</h2>
@@ -14,3 +10,7 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	@import '$lib/css/portfolio/contact.css';
+</style>

@@ -4,10 +4,6 @@
 	import CV from '$lib/files/CV.pdf';
 </script>
 
-<style>
-	@import '$lib/css/portfolio/skills.css';
-</style>
-
 <section class="skills" id="skills-section">
 	<div class="title">
 		<h2>My Skills</h2>
@@ -29,3 +25,7 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	@import '$lib/css/portfolio/skills.css';
+</style>

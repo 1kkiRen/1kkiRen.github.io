@@ -1,7 +1,3 @@
-<style>
-	@import '$lib/css/APIWorker/APIheader.css';
-</style>
-
 <header id="headerAPI">
 	<div class="main-title" id="main-title">
 		<div class="dropdown" id="dropdown">
@@ -19,3 +15,7 @@
 		<button id="submit">Submit</button>
 	</div>
 </header>
+
+<style>
+	@import '$lib/css/APIWorker/APIheader.css';
+</style>
