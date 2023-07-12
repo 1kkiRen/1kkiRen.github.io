@@ -34,7 +34,7 @@
 			padding: 0 9rem;
 			background-color: #1c2333;
 		}
-	
+
 		.skills .title {
 			width: 100%;
 			height: auto;
@@ -42,7 +42,7 @@
 			flex-direction: column;
 			justify-content: flex-start;
 		}
-	
+
 		.skills .title h2 {
 			color: #fff6ec;
 			font-size: 2rem;
@@ -50,14 +50,14 @@
 			text-transform: uppercase;
 			margin-bottom: 0.65rem;
 		}
-	
+
 		.skills .title p {
 			color: #fff6ec;
 			font-size: 1.2rem;
 			font-weight: 500;
 			margin-bottom: 1.5rem;
 		}
-	
+
 		.skills .title .CV .btn {
 			display: inline-block;
 			padding: 0.8rem 2.5rem;
@@ -70,12 +70,12 @@
 			text-transform: uppercase;
 			transition: all 0.3s ease-in-out;
 		}
-	
+
 		.skills .title .CV .btn:hover {
 			background-color: #fff6ec;
 			color: #1c2333;
 		}
-	
+
 		.skills .content {
 			width: 100%;
 			height: 100%;
@@ -84,7 +84,7 @@
 			justify-content: space-around;
 			align-items: center;
 		}
-	
+
 		.skills .content .images {
 			width: 100%;
 			height: auto;
@@ -92,7 +92,7 @@
 			justify-content: space-around;
 			align-items: center;
 		}
-	
+
 		.skills .content .images img {
 			width: 35%;
 			height: auto;
@@ -102,10 +102,9 @@
 			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 			transition: all 0.5s ease-in-out;
 		}
-	
+
 		.skills .content .images img:hover {
 			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
 		}
 	</style>
 </section>
-

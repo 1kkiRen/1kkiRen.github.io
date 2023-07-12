@@ -86,7 +86,7 @@
 			requestedContent.classList.add('show');
 			requestSender.classList.add('hide');
 			requestedContent.scrollIntoView({ behavior: 'smooth' });
-		}); 
+		});
 
 		const emailEnd = '@innopolis.university';
 		function validateEmail() {

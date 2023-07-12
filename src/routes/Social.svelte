@@ -31,31 +31,31 @@
 			padding: 0 9rem;
 			background-color: #fff6ec;
 		}
-	
+
 		.social-media .content {
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 		}
-	
+
 		.social-media .content .title {
 			width: 50%;
 		}
-	
+
 		.social-media .content .title h2 {
 			color: #151a25;
 			font-size: 2rem;
 			font-weight: 600;
 			text-transform: uppercase;
 		}
-	
+
 		.social-media .content .social-media-links {
 			width: 50%;
 			display: flex;
 			justify-content: space-between;
 		}
-	
+
 		.social-media .content .social-media-links .github {
 			width: 8rem;
 			height: 8rem;
@@ -66,7 +66,7 @@
 			align-items: center;
 			transition: all 0.3s ease-in-out;
 		}
-	
+
 		.social-media .content .social-media-links .telegram {
 			width: 8rem;
 			height: 8rem;
@@ -77,7 +77,7 @@
 			align-items: center;
 			transition: all 0.3s ease-in-out;
 		}
-	
+
 		.social-media .content .social-media-links .vk {
 			width: 8rem;
 			height: 8rem;
@@ -89,17 +89,16 @@
 			transition: all 0.3s ease-in-out;
 			object-fit: scale-down;
 		}
-	
+
 		.social-media .content img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
 			transition: all 0.3s ease-in-out;
 		}
-	
+
 		.social-media .content img:hover {
 			transform: scale(1.2);
 		}
 	</style>
 </section>
-

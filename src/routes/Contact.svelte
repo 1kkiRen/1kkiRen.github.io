@@ -19,35 +19,35 @@
 			padding: 0 9rem;
 			background-color: #1c2333;
 		}
-	
+
 		.contact .title h2 {
 			color: #fff6ec;
 			font-size: 2rem;
 			font-weight: 600;
 			text-transform: uppercase;
 		}
-	
+
 		.contact .title p {
 			color: #fff6ec;
 			font-size: 1.2rem;
 			font-weight: 500;
 			margin-bottom: 2rem;
 		}
-	
+
 		.contact .content .col-left {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
 		}
-	
+
 		.contact .content .col-left h2 {
 			color: #fff6ec;
 			font-size: 2rem;
 			font-weight: 600;
 			text-transform: uppercase;
 		}
-	
+
 		.contact .content .col-left .btn {
 			margin-top: 1rem;
 			display: inline-block;
@@ -60,11 +60,10 @@
 			text-transform: uppercase;
 			transition: all 0.3s ease-in-out;
 		}
-	
+
 		.contact .content .col-left .btn:hover {
 			background-color: #fff6ec;
 			color: #1c2333;
 		}
 	</style>
 </section>
-

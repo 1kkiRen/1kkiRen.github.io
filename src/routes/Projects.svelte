@@ -45,21 +45,21 @@
 			padding: 0 9rem;
 			background-color: #fff6ec;
 		}
-	
+
 		.projects .title {
 			width: 25%;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
 		}
-	
+
 		.projects .title h2 {
 			color: #1c2333;
 			font-size: 2rem;
 			font-weight: 600;
 			text-transform: uppercase;
 		}
-	
+
 		.projects .projects-list {
 			width: 100%;
 			height: 100%;
@@ -69,7 +69,7 @@
 			align-items: center;
 			flex-wrap: wrap;
 		}
-	
+
 		.projects .projects-list .project {
 			width: 35%;
 			height: 50%;
@@ -79,29 +79,29 @@
 			overflow: hidden;
 			transition: all 0.3s ease-in-out;
 		}
-	
+
 		.projects .projects-list .project:hover {
 			transform: scale(1.05);
 			transition: all 0.3s ease-in-out;
 		}
-	
+
 		.projects .projects-list .project img {
 			width: 100%;
 			height: 75%;
 			object-fit: cover;
 		}
-	
+
 		.projects .projects-list .project .desc {
 			padding: 1rem;
 		}
-	
+
 		.projects .projects-list .project .desc h3 {
 			color: #fff6ec;
 			font-size: 1.2rem;
 			font-weight: 600;
 			text-transform: uppercase;
 		}
-	
+
 		.projects .projects-list .project .desc p {
 			color: #fff6ec;
 			font-size: 1rem;
@@ -110,4 +110,3 @@
 		}
 	</style>
 </section>
-

@@ -171,28 +171,4 @@
 			transition: all 0.5s ease-in-out;
 		}
 	</style>
-	<script lang="ts">
-		const homeSection = document.querySelector('#home-section') as HTMLDivElement;
-
-		const mainTitle = document.querySelector('#main-title') as HTMLHeadingElement;
-		const dropdownContent = document.querySelector('#dropdown-content') as HTMLDivElement;
-
-		function toggleDropdown() {
-			dropdownContent.classList.toggle('show');
-		}
-
-		mainTitle.addEventListener('mouseover', toggleDropdown, true);
-		mainTitle.addEventListener('mouseout', toggleDropdown, false);
-
-		window.onscroll = function () {
-			const header = document.querySelector('header') as HTMLDivElement;
-			if (window.scrollY > 0) {
-				header.classList.add('shrink');
-				scrollToSec('#home-section');
-			} else {
-				header.classList.remove('shrink');
-			}
-		};
-		
-	</script>
 </header>

@@ -16,7 +16,7 @@
 			<p>This is my real photo.</p>
 		</div>
 	</div>
-	
+
 	<style>
 		.about {
 			width: 100%;
@@ -27,28 +27,28 @@
 			padding: 0 9rem;
 			background-color: #fff6ec;
 		}
-	
+
 		.about .title {
 			width: 100%;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 		}
-	
+
 		.about .title h2 {
 			color: #1c2333;
 			font-size: 2rem;
 			font-weight: 600;
 			text-transform: uppercase;
 		}
-	
+
 		.about .title p {
 			color: #1c2333;
 			font-size: 1.2rem;
 			font-weight: 500;
 			margin-bottom: 2rem;
 		}
-	
+
 		.about .content {
 			width: 100%;
 			height: 100%;
@@ -57,7 +57,7 @@
 			flex-direction: column;
 			align-items: center;
 		}
-	
+
 		.about .content .image {
 			width: 50%;
 			height: auto;
@@ -65,7 +65,7 @@
 			justify-content: center;
 			align-items: center;
 		}
-	
+
 		.about .content .image img {
 			width: 100%;
 			height: auto;
@@ -73,11 +73,11 @@
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 			transition: all 0.3s ease-in-out;
 		}
-	
+
 		.about .content .image img:hover {
 			box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 		}
-	
+
 		.about .content .text {
 			width: 50%;
 			display: flex;
@@ -85,13 +85,13 @@
 			align-items: flex-start;
 			flex-direction: column;
 		}
-	
+
 		.about .content .text h2 {
 			color: #1c2333;
 			font-size: 1.5rem;
 			font-weight: 600;
 		}
-	
+
 		.about .content .text p {
 			color: #1c2333;
 			font-size: 1.2rem;
@@ -100,4 +100,3 @@
 		}
 	</style>
 </section>
-
