@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build:
-    name: build
+    name: build and check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,11 +28,6 @@ jobs:
       - name: Build website
         run: npm run build
 
-      - name: Set Artifacts
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: 'build/'
-
       - name: Code formatting
         run: npm run format
 
@@ -41,20 +36,3 @@ jobs:
 
       - name: Svelte Check
         run: npm run check
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      contents: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v1
