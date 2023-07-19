@@ -34,6 +34,7 @@
 <svelte:head>
 	<title>Portfolio</title>
 	<meta name="description" content="Portfolio using SvelteKit" />
+	<!-- <link rel="icon" href="%sveltekit.assets%/portfolio.png" /> -->
 </svelte:head>
 
 <section>

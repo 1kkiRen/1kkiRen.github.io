@@ -33,6 +33,15 @@ jobs:
         with:
           path: 'build/'
 
+      - name: Code formatting
+        run: npm run format
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Svelte Check
+        run: npm run check
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
