@@ -115,3 +115,36 @@
 	border-top: 5px solid #1c2333;
 	transition: all 0.5s ease-in-out;
 }
+
+@media screen and (max-width: 1024px) {
+	#headerP {
+		padding: 3.5rem 5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#headerP {
+		padding: 3.5rem 3rem;
+		flex-direction: column;
+	}
+
+	#headerP .navigation_bar {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	#headerP .main-title {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+	
+	#headerP .nav ul {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#headerP {
+		padding: 3.5rem 1rem;
+	}
+}

@@ -13,9 +13,7 @@ const config = {
 			base: dev ? '' : process.env.BASE_PATH
 		},
 
-		adapter: adapter({
-			runtime: 'nodejs@18.x'
-		})
+		adapter: adapter()
 	}
 };
 
