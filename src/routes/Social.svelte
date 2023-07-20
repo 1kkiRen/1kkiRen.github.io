@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import github_logo from '$lib/images/github.png';
 	import telegram_logo from '$lib/images/telegram.png';
 	import vk_logo from '$lib/images/vk.png';

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import image2 from '$lib/images/image2.jpg';
 </script>
 

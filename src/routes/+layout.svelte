@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Footer from './Footer.svelte';
 	import './styles.css';
 </script>

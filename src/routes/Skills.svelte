@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import image2 from '$lib/images/image2.jpg';
 	import image3 from '$lib/images/image3.jpg';
 	import CV from '$lib/files/CV.pdf';
