@@ -10,22 +10,12 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		const mainTitle = document.querySelector('#main-title') as HTMLHeadingElement;
-		const dropdownContent = document.querySelector('#dropdown-content') as HTMLDivElement;
-
-		function toggleDropdown() {
-			dropdownContent.classList.toggle('show');
-		}
-
-		mainTitle.addEventListener('mouseover', toggleDropdown, true);
-		mainTitle.addEventListener('mouseout', toggleDropdown, false);
-
 		window.onscroll = function () {
-			const header = document.querySelector('header') as HTMLDivElement;
+			const header = document.querySelector('nav') as HTMLDivElement;
 			if (window.scrollY > 0) {
-				header.classList.add('shrink');
+				header.style.height = '10vh';
 			} else {
-				header.classList.remove('shrink');
+				header.style.height = '100vh';
 			}
 		};
 	});
@@ -38,9 +28,9 @@
 </svelte:head>
 
 <section>
+	<!-- <div style="height: 45vh; background-color: #1c2333;" /> -->
 	<Header />
-
-	<div style="height: 50vh; background-color: #1c2333;" />
+	<div style="height: 100vh; background-color: #1c2333;" />
 
 	<Home />
 	<About />

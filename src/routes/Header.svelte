@@ -5,54 +5,45 @@
 	};
 </script>
 
-<header id="headerP">
-	<div class="navigation_bar">
-		<div class="main-title" id="main-title">
-			<div class="dropdown" id="dropdown">
-				<a href="/">Portfolio</a>
-				<div class="arrow" id="arrow" />
-			</div>
 
-			<ul class="dropdown-content" id="dropdown-content">
-				<li><a href="/APIWorker">APIWorker</a></li>
-			</ul>
-		</div>
-		<div class="nav">
-			<ul>
-				<li>
-					<button id="home" on:click|preventDefault={() => scrollToSec('#home-section')}
-						>Home</button
-					>
-				</li>
-				<li>
-					<button id="about" on:click|preventDefault={() => scrollToSec('#about-section')}
-						>About</button
-					>
-				</li>
-				<li>
-					<button id="skills" on:click|preventDefault={() => scrollToSec('#skills-section')}
-						>Skills</button
-					>
-				</li>
-				<li>
-					<button id="projects" on:click|preventDefault={() => scrollToSec('#projects-section')}
-						>Projects</button
-					>
-				</li>
-				<li>
-					<button id="contact" on:click|preventDefault={() => scrollToSec('#contact-section')}
-						>Contact</button
-					>
-				</li>
-				<li>
-					<button id="social" on:click|preventDefault={() => scrollToSec('#social-media-section')}
-						>Social</button
-					>
-				</li>
+<nav class="navbar fixed-top navbar-expand-lg">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/">Portfolio</a>
+		<div class="dropstart">
+			<button
+				class="dropdown-toggle" data-bs-toggle="dropdown"
+				data-bs-auto-close="outside" aria-expanded="false"
+			>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+				<li><a class="dropdown-item" href="/APIWorker">APIWorker</a></li>
 			</ul>
 		</div>
 	</div>
-</header>
+	<div class="container" id="navbarSupportedContent">
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+				<a class="nav-link" aria-current="page" href="/#home-section">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/#about-section">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/#skills-section">Skills</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/#projects-section">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/#contact-section">Contact</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/#social-media-section">Social</a>
+			</li>
+			
+		</ul>
+	</div>
+</nav>
 
 <style>
 	@import '$lib/css/portfolio/header.css';
