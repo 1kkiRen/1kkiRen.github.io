@@ -11,11 +11,17 @@
 
 	onMount(() => {
 		window.onscroll = function () {
-			const header = document.querySelector('nav') as HTMLDivElement;
+			const header = document.getElementById('container-header') as HTMLDivElement;
+			const navbar = document.querySelector('nav') as HTMLDivElement;
 			if (window.scrollY > 0) {
-				header.style.height = '10vh';
+				header.style.height = '11.5vh';
+				navbar.style.marginLeft = '1vw';
 			} else {
 				header.style.height = '100vh';
+				// return previous margin
+				navbar.style.marginLeft = '0';
+				navbar.style.marginLeft = '20vw';
+				
 			}
 		};
 	});

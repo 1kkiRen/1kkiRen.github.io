@@ -1,23 +1,33 @@
-.navbar {
-	width: 100%;
-	height: 100vh;
-	padding: 3.5rem 9rem;
-
+.container-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: normal;
 	align-items: center;
+
+	
 	background-color: #1c2333;
 	border-bottom: 2px solid #151a25;
 	transition: all 1s ease-in-out;
 }
 
-.navbar.shrink {
-	padding: 1rem 9rem;
-	height: 10vh;
+.container {
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: normal;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
 	transition: all 1s ease-in-out;
 }
 
 .navbar-brand {
 	color: #fff6ec;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 700;
 }
 
@@ -31,27 +41,71 @@
 	font-weight: 500;
 	background-color: transparent;
 	border: none;
+
+	transition: all 0.3s ease-in-out;
 }
 
 .dropdown-item {
-	color: #1c2333;
+	display: inline-block;
+
+	width: 100%;
+	color: #fff6ec;
 	font-size: 1rem;
 	font-weight: 500;
 	border: none;
+	background-color: #151a25;
+
+	background-image: linear-gradient(#fff6ec 0 0);
+	background-position: 0 100%;
+	background-size: 0% 2px;
+	background-repeat: no-repeat;
+	transition:
+		background-size 0.3s,
+		background-position 0s 0.3s;	
+	}
+
+.dropdown-item:hover {
+	color: #e6dfd7;
+	background-color: #151a25;
+	background-position: 100% 100%; 
+  	background-size: 100% 2px;
+}
+
+.dropdown-menu {
+	background-color: #151a25;
+}
+
+.dropdown-toggle:hover {
+	transform: scale(1.5);
 }
 
 .nav-link {
 	color: #fff6ec;
 	font-size: 1rem;
 	font-weight: 500;
-	transition: all 0.5 ease-in-out;
+
+	background-image: linear-gradient(#fff6ec 0 0);
+	background-position: 0 100%; 
+	background-size: 0% 2px;
+	background-repeat: no-repeat;
+	transition:
+		background-size 0.3s,
+		background-position 0s 0.3s;
 }
 
 .nav-link:hover {
 	color: #e6dfd7;
-	padding: 0.5rem 1rem;
-	border: 2px solid #e6dfd7;
-	border-radius: 3px;
-	transform: scale(1.1);
-	transition: all 0.3s ease-in-out;
+
+	background-position: 100% 100%; 
+  	background-size: 100% 2px;
+}
+
+@media screen and (max-width: 790px) {
+	#navbarSupportedContent {
+		display: none;
+	}
+
+	.navbar-brand {
+		font-size: 3rem;
+	}
 }
