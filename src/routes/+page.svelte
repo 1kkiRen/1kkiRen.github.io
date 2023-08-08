@@ -18,8 +18,6 @@
 				navbar.style.marginLeft = '1vw';
 			} else {
 				header.style.height = '100vh';
-				// return previous margin
-				navbar.style.marginLeft = '0';
 				navbar.style.marginLeft = '20vw';
 				
 			}
