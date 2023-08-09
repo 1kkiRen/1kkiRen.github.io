@@ -1,72 +1,42 @@
 .projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
 	width: 100%;
 	height: 100vh;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 9rem;
+
+
 	background-color: #fff6ec;
 }
 
-.projects .title {
-	width: 25%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-}
-
-.projects .title h2 {
+.title {
 	color: #1c2333;
 	font-size: 2rem;
 	font-weight: 600;
 	text-transform: uppercase;
+
+	margin-top: 3rem;
 }
 
-.projects .projects-list {
-	width: 100%;
-	height: 100%;
-	padding: 7% 1%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-}
+.carousel-inner {
+	width: 70vw;
+	height: 60vh;
 
-.projects .projects-list .project {
-	width: 35%;
-	height: 50%;
-	margin-bottom: 2rem;
 	background-color: #1c2333;
-	border-radius: 10px;
-	overflow: hidden;
-	transition: all 0.3s ease-in-out;
 }
 
-.projects .projects-list .project:hover {
-	transform: scale(1.05);
-	transition: all 0.3s ease-in-out;
+.carousel-item {
+	height: 100%;
 }
 
-.projects .projects-list .project img {
-	width: 100%;
-	height: 75%;
+.carousel-item img {
+	height: 100%;
 	object-fit: cover;
 }
 
-.projects .projects-list .project .desc {
-	padding: 1rem;
-}
-
-.projects .projects-list .project .desc h3 {
-	color: #fff6ec;
-	font-size: 1.2rem;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.projects .projects-list .project .desc p {
-	color: #fff6ec;
-	font-size: 1rem;
-	font-weight: 500;
-	margin-bottom: 1rem;
+.carousel-caption {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
 }
