@@ -1,6 +1,6 @@
 <script lang="ts">
-	import image2 from '$lib/images/image2.jpg';
-	import image3 from '$lib/images/image3.jpg';
+	import image2 from '$lib/images/icons1.png';
+	import image3 from '$lib/images/icons2.png';
 	import CV from '$lib/files/CV.pdf';
 </script>
 
