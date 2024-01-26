@@ -65,19 +65,19 @@
 		justify-content: space-around;
 		padding: 0 2rem;
 	}
-	
+
 	.contact .title {
 		margin-bottom: 2rem;
 	}
-	
+
 	.contact .content {
 		flex-direction: column;
 	}
-	
+
 	.contact .content .column {
 		width: 100%;
 	}
-	
+
 	.contact .content .col-left {
 		margin-bottom: 2rem;
 	}
@@ -87,19 +87,19 @@
 	.contact {
 		padding: 0 1rem;
 	}
-	
+
 	.contact .title h2 {
 		font-size: 1.5rem;
 	}
-	
+
 	.contact .title p {
 		font-size: 1rem;
 	}
-	
+
 	.contact .content .col-left h2 {
 		font-size: 1.5rem;
 	}
-	
+
 	.contact .content .col-left .btn {
 		font-size: 1rem;
 	}

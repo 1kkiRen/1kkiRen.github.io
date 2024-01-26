@@ -37,10 +37,10 @@
 	width: 25%;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 	.social-media .content .social-media-links {
 		width: 40%;
-	}	
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -58,7 +58,6 @@
 .social-media .content .social-media-links li {
 	padding: 0 2%;
 }
-
 
 .social-media .content .social-media-links .github {
 	border-radius: 50%;
@@ -86,7 +85,6 @@
 	align-items: center;
 	transition: all 0.3s ease-in-out;
 	object-fit: scale-down;
-	
 }
 
 .social-media .content img {

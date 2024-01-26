@@ -19,7 +19,6 @@
 			} else {
 				header.style.height = '100vh';
 				navbar.style.marginLeft = '20vw';
-				
 			}
 		};
 	});

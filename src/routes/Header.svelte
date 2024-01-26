@@ -5,21 +5,23 @@
 	};
 </script>
 
-
 <div class="container-header fixed-top" id="container-header">
 	<nav class="navbar">
 		<div class="btn-group dropdown">
-			<a class="navbar-brand btn" href="/">
-				Portfolio
-			</a>
-			<button type="button" class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-				<span class="visually-hidden"></span>
+			<a class="navbar-brand btn" href="/"> Portfolio </a>
+			<button
+				type="button"
+				class="dropdown-toggle dropdown-toggle-split"
+				data-bs-toggle="dropdown"
+				aria-expanded="false"
+			>
+				<span class="visually-hidden" />
 			</button>
 			<ul class="dropdown-menu">
 				<li><a class="dropdown-item" href="/APIWorker">APIWorker</a></li>
 			</ul>
 		</div>
-		
+
 		<div class="container" id="navbarSupportedContent">
 			<ul class="nav justify-content-center">
 				<li class="nav-item">
@@ -40,7 +42,6 @@
 				<li class="nav-item">
 					<a class="nav-link" href="/#social-media-section">Social</a>
 				</li>
-				
 			</ul>
 		</div>
 	</nav>
