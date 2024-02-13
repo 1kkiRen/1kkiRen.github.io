@@ -63,6 +63,7 @@
 					>
 						<h5>VibeChecker</h5>
 						<p>Parsing comments from YouTube and making Sentimental Analysis</p>
+						<p>(temporarily unavailable, contact me if you want access)</p>
 					</a>
 				</div>
 			</div>

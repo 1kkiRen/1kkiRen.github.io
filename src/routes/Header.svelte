@@ -9,7 +9,7 @@
 	<nav class="navbar">
 		<div class="btn-group dropdown">
 			<a class="navbar-brand btn" href="/"> Portfolio </a>
-			<button
+			<!-- <button
 				type="button"
 				class="dropdown-toggle dropdown-toggle-split"
 				data-bs-toggle="dropdown"
@@ -19,7 +19,7 @@
 			</button>
 			<ul class="dropdown-menu">
 				<li><a class="dropdown-item" href="/APIWorker">APIWorker</a></li>
-			</ul>
+			</ul> -->
 		</div>
 
 		<div class="container" id="navbarSupportedContent">
