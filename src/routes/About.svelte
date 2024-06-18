@@ -5,9 +5,8 @@
 <section class="about" id="about-section">
 	<div class="title">
 		<h2>About Me</h2>
-		<p>I was born in Tver, Russia.</p>
-		<p>I've been doing programming since 8th grade of school.</p>
-		<p>My goal is to become a researcher in the AI field.</p>
+		<p>NLP/ML Engineer with 1+ year research experience in tokenizer adaptation for LLMs.</p>
+		<p>Good team worker. Passion for effective solutions for business using AI. Skilled in Python, Torch, pandas, numpy. Experienced in working with open-source models. Interested in language adaptation of LLMs.</p>
 	</div>
 	<div class="content">
 		<div class="image">
