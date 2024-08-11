@@ -1,5 +1,5 @@
 <script lang="ts">
-	import image4 from '$lib/images/image4.jpg';
+	import image4 from '$lib/images/image4.png';
 	import image5 from '$lib/images/image5.jpg';
 	import image6 from '$lib/images/image6.png';
 </script>
@@ -37,11 +37,11 @@
 				<img src={image4} class="d-block w-100" alt="..." />
 				<div class="carousel-caption">
 					<a
-						href="https://github.com/1kkiRen/Sentimental-Classifier"
+						href="https://github.com/1kkiRen/Tokenizer-Changer"
 						style="text-decoration: none; color: #fff6ec"
 					>
-						<h5>Sentimental Classifier</h5>
-						<p>Model that classify review by its tone</p>
+						<h5>Tokenizer Changer</h5>
+						<p>Python script for manipulating the existing tokenizer</p>
 					</a>
 				</div>
 			</div>
