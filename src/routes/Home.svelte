@@ -6,7 +6,7 @@
 	<div class="content">
 		<h3>Hello, I'm</h3>
 		<h1>Dmitrii Kuzmin</h1>
-		<p>Second year Bachelor Student at Innopolis University.</p>
+		<p>NLP Engineer crafting efficient tooling for large language models.</p>
 	</div>
 	<div class="image">
 		<img src={image1} alt="Something went wrong" />

@@ -6,6 +6,9 @@
 	import Contact from './Contact.svelte';
 	import Social from './Social.svelte';
 	import Header from './Header.svelte';
+	import Experience from './Experience.svelte';
+	import Publications from './Publications.svelte';
+	import Education from './Education.svelte';
 
 	import { onMount } from 'svelte';
 
@@ -36,9 +39,19 @@
 	<div style="height: 100vh; background-color: #1c2333;" />
 
 	<Home />
+	<div class="fade-transition dark-to-light" />
 	<About />
+	<div class="fade-transition light-to-dark" />
 	<Skills />
+	<div class="fade-transition dark-to-light" />
+	<Experience />
 	<Projects />
+	<div class="fade-transition light-to-dark" />
+	<Publications />
+	<div class="fade-transition dark-to-light" />
+	<Education />
+	<div class="fade-transition light-to-dark" />
 	<Contact />
+	<div class="fade-transition dark-to-light" />
 	<Social />
 </section>

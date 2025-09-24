@@ -10,3 +10,29 @@
 html {
 	scroll-behavior: smooth;
 }
+
+.fade-transition {
+	width: 100%;
+	height: clamp(1rem, 5vh, 5rem);
+	background: transparent;
+}
+
+.fade-transition.dark-to-light {
+	background: linear-gradient(
+		180deg,
+		#1c2333 0%,
+		/* #252c3f 50%, */
+		/* #3a4258 75%, */
+		#fff6ec 100%
+	);
+}
+
+.fade-transition.light-to-dark {
+	background: linear-gradient(
+		180deg,
+		#fff6ec 0%,
+		/* #ede4d8 50%, */
+		/* #4a5167 75%, */
+		#1c2333 100%
+	);
+}

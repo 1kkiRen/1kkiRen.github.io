@@ -2,10 +2,17 @@
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	padding: 0 9rem;
+	gap: 3rem;
+	padding: 6rem 9rem;
 	background-color: #1c2333;
+}
+
+.contact .title {
+	text-align: center;
+	max-width: 760px;
 }
 
 .contact .title h2 {
@@ -17,96 +24,104 @@
 
 .contact .title p {
 	color: #fff6ec;
-	font-size: 1.2rem;
+	font-size: 1.15rem;
 	font-weight: 500;
-	margin-bottom: 2rem;
+	margin-top: 1rem;
 }
 
-.contact .content .column {
-	width: 50%;
-	height: 100%;
-}
-
-.contact .content .col-left {
+.contact .content {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	gap: 2rem;
 }
 
-.contact .content .col-left h2 {
+.contact .content article {
+	min-width: 220px;
+	background: rgba(255, 246, 236, 0.08);
+	border: 1px solid rgba(255, 246, 236, 0.2);
+	border-radius: 12px;
+	padding: 1.75rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	text-align: center;
+}
+
+.contact .content article h3 {
 	color: #fff6ec;
-	font-size: 2rem;
+	font-size: 1.2rem;
 	font-weight: 600;
 	text-transform: uppercase;
 }
 
-.contact .content .col-left .btn {
-	margin-top: 1rem;
-	display: inline-block;
+.contact .content .btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	padding: 0.8rem 2.5rem;
 	border: 2px solid #fff6ec;
 	color: #fff6ec;
-	font-size: 1.2rem;
-	font-weight: 500;
+	font-size: 1.05rem;
+	font-weight: 600;
 	text-decoration: none;
 	text-transform: uppercase;
+	letter-spacing: 0.04em;
 	transition: all 0.3s ease-in-out;
 }
 
-.contact .content .col-left .btn:hover {
+.contact .content .btn:hover {
 	background-color: #fff6ec;
 	color: #1c2333;
 }
 
-@media screen and (max-width: 768px) {
-	.contact {
-		flex-direction: column;
-		justify-content: space-around;
-		padding: 0 2rem;
-	}
-
-	.contact .title {
-		margin-bottom: 2rem;
-	}
-
-	.contact .content {
-		flex-direction: column;
-	}
-
-	.contact .content .column {
-		width: 100%;
-	}
-
-	.contact .content .col-left {
-		margin-bottom: 2rem;
-	}
+.contact .content .btn.secondary {
+	border-color: #ffd6a0;
+	color: #ffd6a0;
 }
 
-@media screen and (max-width: 480px) {
-	.contact {
-		padding: 0 1rem;
-	}
-
-	.contact .title h2 {
-		font-size: 1.5rem;
-	}
-
-	.contact .title p {
-		font-size: 1rem;
-	}
-
-	.contact .content .col-left h2 {
-		font-size: 1.5rem;
-	}
-
-	.contact .content .col-left .btn {
-		font-size: 1rem;
-	}
+.contact .content .btn.secondary:hover {
+	background-color: #ffd6a0;
+	color: #1c2333;
 }
 
 @media screen and (max-width: 1024px) {
 	.contact {
-		padding: 0 4rem;
+		padding: 5rem 4rem;
+	}
+
+	.contact .content {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contact {
+		padding: 4rem 2.5rem;
+		gap: 2.5rem;
+	}
+
+	.contact .content {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.contact .content article {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.contact {
+		padding: 3.5rem 1.5rem;
+	}
+
+	.contact .title h2 {
+		font-size: 1.6rem;
+	}
+
+	.contact .title p,
+	.contact .content .btn {
+		font-size: 0.95rem;
 	}
 }

@@ -1,0 +1,109 @@
+.education {
+	width: 100%;
+	min-height: 100vh;
+	padding: 6rem 9rem;
+	background-color: #fff6ec;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+}
+
+.education .title {
+	width: 100%;
+	max-width: 860px;
+	text-align: center;
+}
+
+.education .title h2 {
+	color: #1c2333;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 0.75rem;
+}
+
+.education .title p {
+	color: #1c2333;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+.education .content {
+	width: 100%;
+	max-width: 860px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
+}
+
+.education article {
+	background: #ffffff;
+	border-left: 4px solid #1c2333;
+	border-radius: 12px;
+	padding: 1.75rem 2rem;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.education article header {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	margin-bottom: 0.9rem;
+}
+
+.education article h3 {
+	color: #1c2333;
+	font-size: 1.35rem;
+	font-weight: 600;
+}
+
+.education article .meta {
+	color: #53606f;
+	font-size: 0.95rem;
+	font-weight: 500;
+}
+
+.education article ul {
+	list-style: disc;
+	margin-left: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.education article li {
+	color: #1c2333;
+	font-size: 1.05rem;
+	line-height: 1.55;
+}
+
+@media screen and (max-width: 1024px) {
+	.education {
+		padding: 5rem 4rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.education {
+		padding: 4rem 2.5rem;
+	}
+
+	.education article {
+		padding: 1.5rem 1.6rem;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.education {
+		padding: 3.5rem 1.5rem;
+	}
+
+	.education .title h2 {
+		font-size: 1.6rem;
+	}
+
+	.education article h3 {
+		font-size: 1.15rem;
+	}
+}

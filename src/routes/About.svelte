@@ -5,8 +5,8 @@
 <section class="about" id="about-section">
 	<div class="title">
 		<h2>About Me</h2>
-		<p>NLP/ML Engineer with 1+ year research experience in tokenizer adaptation for LLMs.</p>
-		<p>Good team worker. Passion for effective solutions for business using AI. Skilled in Python, Torch, pandas, numpy. Experienced in working with open-source models. Interested in language adaptation of LLMs.</p>
+		<p>NLP / ML engineer and researcher focused on tokenizer adaptation, LLM fine-tuning, and evaluation.</p>
+		<p>I iterate quickly on open-source model stacks, building efficient training and inference workflows for multilingual use-cases. I enjoy collaborating with cross-functional teams and translating research insights into production impact.</p>
 	</div>
 	<div class="content">
 		<div class="image">

@@ -1,13 +1,19 @@
 <section class="contact" id="contact-section">
 	<div class="title">
 		<h2>Contact Me</h2>
-		<p>You will be able to send me message soon. Now only default client available.</p>
+		<p>Let’s collaborate on tokenizer research, LLM evaluation, or productizing AI workflows.</p>
 	</div>
 	<div class="content">
-		<div class="col-left">
-			<h2>Send Me a Message</h2>
-			<a class="btn" href="mailto:1kkiren@mail.ru?subject=Portfolio" id="email">Send message</a>
-		</div>
+		<article>
+			<h3>Direct Email</h3>
+			<a class="btn" href="mailto:1kkiren@mail.ru?subject=Portfolio" id="email">1kkiren@mail.ru</a>
+		</article>
+		<article>
+			<h3>Portfolio</h3>
+			<a class="btn secondary" href="https://1kkiren.ru" target="_blank" rel="noreferrer"
+				>1kkiren.ru</a
+			>
+		</article>
 	</div>
 </section>
 

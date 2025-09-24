@@ -36,35 +36,43 @@
 			<div class="carousel-item active" data-bs-interval="10000">
 				<img src={image4} class="d-block w-100" alt="..." />
 				<div class="carousel-caption">
-					<a
-						href="https://github.com/1kkiRen/Tokenizer-Changer"
-						style="text-decoration: none; color: #fff6ec"
-					>
-						<h5>Tokenizer Changer</h5>
-						<p>Python script for manipulating the existing tokenizer</p>
-					</a>
+					<h5>
+						<a href="https://github.com/1kkiRen/Tokenizer-Changer" target="_blank" rel="noreferrer"
+							>TokenizerChanger</a
+						>
+					</h5>
+					<p>Open-source toolkit for modifying existing tokenizer vocabularies.</p>
+					<p class="links">
+						<a href="https://pypi.org/project/TokenizerChanger/" target="_blank" rel="noreferrer">PyPI</a>
+						<span>·</span>
+						<a href="https://github.com/1kkiRen/Tokenizer-Changer" target="_blank" rel="noreferrer">GitHub</a>
+					</p>
 				</div>
 			</div>
 			<div class="carousel-item" data-bs-interval="2000">
 				<img src={image5} class="d-block w-100" alt="..." />
 				<div class="carousel-caption">
-					<a href="https://github.com/1kkiRen/RPG" style="text-decoration: none; color: #fff6ec">
-						<h5>RPG game</h5>
-						<p>Text RPG game on Blockchain written on Solidity</p>
-					</a>
+					<h5>
+						<a href="https://github.com/1kkiRen/Embeddings-Division" target="_blank" rel="noreferrer"
+							>EmbeddingsDivision</a
+						>
+					</h5>
+					<p>Library for separating and reusing embedding layers in large language models.</p>
+					<p class="links">
+						<a href="https://pypi.org/project/embdiv" target="_blank" rel="noreferrer">PyPI</a>
+						<span>·</span>
+						<a href="https://github.com/1kkiRen/Embeddings-Division" target="_blank" rel="noreferrer">GitHub</a>
+					</p>
 				</div>
 			</div>
 			<div class="carousel-item">
 				<img src={image6} class="d-block w-100" alt="..." />
 				<div class="carousel-caption">
-					<a
-						href="https://vibechecker-e8b06.web.app/"
-						style="text-decoration: none; color: #fff6ec"
-					>
-						<h5>VibeChecker</h5>
-						<p>Parsing comments from YouTube and making Sentimental Analysis</p>
-						<p>(temporarily unavailable, contact me if you want access)</p>
-					</a>
+					<h5>CRUD Calendar LLM Chatbot</h5>
+					<p>Telegram assistant that manages schedules and summarizes news with LLM-powered reasoning.</p>
+					<p class="links">
+						<span><a href="mailto:1kkiren@mail.ru?subject=Calendar%20LLM" rel="noreferrer">Request demo</a></span>
+					</p>
 				</div>
 			</div>
 		</div>

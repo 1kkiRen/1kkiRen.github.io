@@ -1,0 +1,118 @@
+.experience {
+	width: 100%;
+	min-height: 100vh;
+	padding: 6rem 9rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	background-color: #fff6ec;
+}
+
+.experience .title {
+	width: 100%;
+	max-width: 960px;
+	text-align: center;
+}
+
+.experience .title h2 {
+	color: #1c2333;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 0.75rem;
+}
+
+.experience .title p {
+	color: #1c2333;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+.experience .timeline {
+	width: 100%;
+	max-width: 960px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
+}
+
+.experience article {
+	background-color: #ffffff;
+	border-left: 4px solid #1c2333;
+	padding: 1.5rem 2rem;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+	border-radius: 10px;
+}
+
+.experience article header {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	margin-bottom: 1rem;
+}
+
+.experience article h3 {
+	color: #1c2333;
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.experience article .meta {
+	color: #53606f;
+	font-size: 0.95rem;
+	font-weight: 500;
+}
+
+.experience article ul {
+	list-style: disc;
+	margin-left: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.experience article li {
+	color: #1c2333;
+	font-size: 1.05rem;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 1024px) {
+	.experience {
+		padding: 5rem 4rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.experience {
+		padding: 4rem 2.5rem;
+	}
+
+	.experience article {
+		padding: 1.5rem;
+	}
+
+	.experience article ul {
+		margin-left: 1.25rem;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.experience {
+		padding: 3.5rem 1.5rem;
+	}
+
+	.experience .title h2 {
+		font-size: 1.6rem;
+	}
+
+	.experience article h3 {
+		font-size: 1.1rem;
+	}
+
+	.experience article li {
+		font-size: 0.95rem;
+	}
+}

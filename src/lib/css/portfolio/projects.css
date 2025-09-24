@@ -39,3 +39,29 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 }
+
+.carousel-caption h5 a {
+	color: #fff6ec;
+	text-decoration: none;
+}
+
+.carousel-caption h5 a:hover {
+	color: #ffd6a0;
+}
+
+.carousel-caption .links {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin-top: 0.5rem;
+}
+
+.carousel-caption .links a {
+	color: #ffd6a0;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.carousel-caption .links a:hover {
+	text-decoration: underline;
+}

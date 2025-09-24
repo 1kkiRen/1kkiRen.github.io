@@ -34,7 +34,16 @@
 					<a class="nav-link" href="/#skills-section">Skills</a>
 				</li>
 				<li class="nav-item">
+					<a class="nav-link" href="/#experience-section">Experience</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link" href="/#projects-section">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/#publications-section">Publications</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/#education-section">Education</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/#contact-section">Contact</a>
