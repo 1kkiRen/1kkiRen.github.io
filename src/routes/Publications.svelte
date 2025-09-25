@@ -12,7 +12,7 @@
 			</p>
 		</article>
 		<article>
-			<h3>Cost-efficient Method for LLM Adaptation for the Russian Language</h3>
+			<h3>TokenSubstitution: Cost-efficient Method for LLM Adaptation for the Russian Language</h3>
 			<div class="meta">ACL 2026 · Researcher &amp; Writer · Feb 2025 – present · In progress</div>
 			<p>
 				Proposes cost-effective adaptation approach for improving the performance of LLM generation in target language.
