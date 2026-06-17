@@ -6,23 +6,43 @@
 	<div class="timeline">
 		<article>
 			<header>
-				<h3>Research Intern · Mohamed bin Zayed University of Artificial Intelligence</h3>
-				<span class="meta">Abu Dhabi, United Arab Emirates · Jun 2025 – present</span>
+				<h3>NLP Engineer · Neural Systems and Deep Learning Lab, MIPT</h3>
+				<span class="meta">Moscow, Russia · May 2025 – present</span>
 			</header>
 			<ul>
-				<li>Designing alternative tokenization strategies to boost LLM inference quality and efficiency.</li>
-				<li>Co-authoring an academic paper on tokenizer-driven performance gains for multilingual models.</li>
+				<li>
+					Maintain and scale LLM inference across 3 clusters of 17 GPUs (NVIDIA A100/H100 and
+					MetaX), serving 6 models from 14B Dense to 1T MoE at 150k+ requests/day; reduced p95
+					latency from 3000 ms to 2500 ms (17%).
+				</li>
+				<li>Lead research on uncertainty estimation in the reasoning of large language models.</li>
+				<li>
+					Designed and deployed a LangGraph agentic pipeline that generates Selenium tests from
+					natural-language descriptions.
+				</li>
+				<li>
+					Designed the architecture of a co-pilot for automating call-center operator workflows.
+				</li>
+				<li>
+					Designed an LLM-uncertainty evaluation benchmark covering 40+ models across 4 domains.
+				</li>
+				<li>
+					Launched a recurring LLM-eval (LLM-as-a-Judge, benchmark criteria) pipeline on MetaX GPUs.
+				</li>
 			</ul>
 		</article>
 		<article>
 			<header>
-				<h3>Middle NLP Engineer · DeepPavlov</h3>
-				<span class="meta">Moscow, Russia · May 2025 – present</span>
+				<h3>Visiting Researcher, NLP · MBZUAI</h3>
+				<span class="meta">Abu Dhabi, UAE (remote) · Jun 2025 – present</span>
 			</header>
 			<ul>
-				<li>Running R&amp;D initiatives and evaluation workflows.</li>
-				<li>Building testing harnesses for instruction-tuned models.</li>
-				<li>Testing inference pipelines on domestic GPUs from Chinese manufacturers.</li>
+				<li>
+					Lead research on adapting LLM tokenizers to Russian on Qwen2.5-1.5B-Instruct (1000+
+					GPU-hours), achieving a 17% reduction in fertility relative to the baseline tokenizer.
+				</li>
+				<li>Proposed and implemented an alternative tokenization method.</li>
+				<li>Coordinated experiments with collaborating research teams.</li>
 			</ul>
 		</article>
 		<article>
@@ -31,41 +51,65 @@
 				<span class="meta">Moscow, Russia · Feb 2025 – May 2025</span>
 			</header>
 			<ul>
-				<li>Fine-tuned the Qwen2.5-VL model for multimodal requirement analysis.</li>
-				<li>Implemented an end-to-end pipeline.</li>
-				<li>Designed prompting strategies to generate actionable feedback on heterogeneous specifications.</li>
+				<li>
+					Fine-tuned Qwen2.5-VL (LoRA, r=16, 3 epochs) on a 200-drawing corpus for object detection:
+					mAP@0.5 = 0.6, mAP@[.5,.95] = 0.35.
+				</li>
+				<li>
+					Assembled an end-to-end pipeline for object detection in drawings (preprocess → inference
+					→ postprocess → report) with 87% class coverage.
+				</li>
+				<li>Selected and A/B tested prompts for generating remarks on drawings.</li>
 			</ul>
 		</article>
 		<article>
 			<header>
-				<h3>NLP Researcher · Higher School of Economics</h3>
+				<h3>Research Assistant, NLP · Higher School of Economics</h3>
 				<span class="meta">Moscow, Russia · Jun 2024 – May 2025</span>
 			</header>
 			<ul>
-				<li>Fine-tuned Llama 3 8B Instruct for Russian-language generation tasks.</li>
-				<li>Developed a Russian BPE tokenizer and tooling to manipulate existing vocabularies safely.</li>
-				<li>Built a grammar benchmark suite to quantify improvements across downstream tasks.</li>
+				<li>
+					Fine-tuned Llama-3-8B-Instruct (SFT, 300 GPU-hours); achieved an 11.6% improvement on the
+					overall MERA benchmark score.
+				</li>
+				<li>
+					Developed a BPE tokenizer for Russian on an 80 GB corpus; reduced the average number of
+					fragments per word from 3.86 to 1.5 (61% reduction).
+				</li>
+				<li>
+					Implemented methods for manipulating existing tokenizers (token deletion / addition /
+					merging) — released as the open-source library <a
+						href="https://pypi.org/project/TokenizerChanger/"
+						target="_blank"
+						rel="noreferrer">TokenizerChanger</a
+					>.
+				</li>
+				<li>Created a grammar benchmark for Russian, used in the AI Journey 2025 publication.</li>
 			</ul>
 		</article>
 		<article>
 			<header>
-				<h3>ML Engineer &amp; Backend Engineer · Moscow Aviation Institute</h3>
+				<h3>ML / Backend Engineer · Moscow Aviation Institute</h3>
 				<span class="meta">Moscow, Russia · Jul 2023 – Oct 2023</span>
 			</header>
 			<ul>
-				<li>Delivered a sentence-theme classification model for aviation-specific communications.</li>
-				<li>Optimized MongoDB queries powering reporting dashboards.</li>
-				<li>Integrated Telegram API services to streamline data ingestion.</li>
+				<li>Developed a sentence topic classification model with 10+ classes.</li>
+				<li>
+					Optimized SQL queries and database schema: p95 latency reduced from ~1500 ms to ~800 ms
+					(47% reduction).
+				</li>
 			</ul>
 		</article>
 		<article>
 			<header>
-				<h3>NLP Engineer · Innopolis University</h3>
+				<h3>NLP Engineer (Internship) · Innopolis University</h3>
 				<span class="meta">Innopolis, Russia · Jun 2023 – Jul 2023</span>
 			</header>
 			<ul>
-				<li>Built a deep learning pipeline for sentiment analysis on YouTube comments.</li>
-				<li>Fine-tuned BERT models to improve classification accuracy on imbalanced datasets.</li>
+				<li>
+					Fine-tuned RuBERT for sentiment analysis of YouTube comments on a ~10k example dataset; F1
+					= 0.82.
+				</li>
 			</ul>
 		</article>
 	</div>

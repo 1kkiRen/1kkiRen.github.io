@@ -17,42 +17,52 @@
 	<div class="content">
 		<div class="grid">
 			<div class="card">
-				<h3>NLP</h3>
+				<h3>LLM / NLP</h3>
 				<ul>
-					<li>PyTorch, Transformers, Tokenizers</li>
-					<li>LangChain, custom inference tooling</li>
-					<li>Dataset curation &amp; evaluation pipelines</li>
+					<li>PyTorch, Hugging Face Transformers</li>
+					<li>PEFT (LoRA / QLoRA), SFT</li>
+					<li>Tokenization (BPE, SentencePiece)</li>
+					<li>vLLM, Triton inference</li>
 				</ul>
 			</div>
 			<div class="card">
-				<h3>DevOps</h3>
+				<h3>Agentic &amp; RAG</h3>
 				<ul>
-					<li>Git &amp; collaborative workflows</li>
-					<li>Dockerized training/inference stacks</li>
-					<li>GPU optimization &amp; monitoring</li>
+					<li>LangChain, LangGraph</li>
+					<li>LiteLLM routing across providers</li>
+					<li>Pydantic data models</li>
+					<li>Qdrant vector store</li>
 				</ul>
 			</div>
 			<div class="card">
-				<h3>Back-end</h3>
+				<h3>MLOps / Infra</h3>
 				<ul>
-					<li>MongoDB data modeling</li>
-					<li>Telegram API integrations</li>
-					<li>RESTful service design</li>
+					<li>CUDA, Docker, Git, Linux, Bash</li>
+					<li>Weights &amp; Biases experiment tracking</li>
+					<li>Distributed inference on NVIDIA &amp; MetaX GPUs</li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>Data &amp; Backend</h3>
+				<ul>
+					<li>Python, NumPy, Pandas, scikit-learn</li>
+					<li>SQL query optimization</li>
+					<li>FastAPI services</li>
 				</ul>
 			</div>
 			<div class="card">
 				<h3>Languages</h3>
 				<ul>
-					<li>English (working proficiency)</li>
+					<li>English (C1, confirmed)</li>
 					<li>Russian (native)</li>
 				</ul>
 			</div>
 			<div class="card">
 				<h3>Soft Skills</h3>
 				<ul>
-					<li>Flexibility &amp; ownership</li>
-					<li>Responsible delivery</li>
-					<li>Team enthusiasm &amp; knowledge sharing</li>
+					<li>Flexibility</li>
+					<li>Responsibility</li>
+					<li>Enthusiasm</li>
 				</ul>
 			</div>
 		</div>

@@ -1,7 +1,10 @@
 <section class="contact" id="contact-section">
 	<div class="title">
 		<h2>Contact Me</h2>
-		<p>Let’s collaborate on tokenizer research, LLM evaluation, or productizing AI workflows.</p>
+		<p>
+			Open to research collaborations and engineering roles in NLP, LLM fine-tuning, and tokenizer
+			work.
+		</p>
 	</div>
 	<div class="content">
 		<article>

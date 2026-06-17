@@ -1,6 +1,5 @@
 <script lang="ts">
 	import image4 from '$lib/images/image4.png';
-	import image5 from '$lib/images/image5.jpg';
 	import image6 from '$lib/images/image6.png';
 </script>
 
@@ -24,12 +23,6 @@
 				data-bs-slide-to="1"
 				aria-label="Slide 2"
 			/>
-			<button
-				type="button"
-				data-bs-target="#carouselExampleDark"
-				data-bs-slide-to="2"
-				aria-label="Slide 3"
-			/>
 		</div>
 
 		<div class="carousel-inner">
@@ -41,27 +34,18 @@
 							>TokenizerChanger</a
 						>
 					</h5>
-					<p>Open-source toolkit for modifying existing tokenizer vocabularies.</p>
-					<p class="links">
-						<a href="https://pypi.org/project/TokenizerChanger/" target="_blank" rel="noreferrer">PyPI</a>
-						<span>·</span>
-						<a href="https://github.com/1kkiRen/Tokenizer-Changer" target="_blank" rel="noreferrer">GitHub</a>
+					<p>
+						Open-source library for modifying existing tokenizer vocabularies (token deletion,
+						addition, merging).
 					</p>
-				</div>
-			</div>
-			<div class="carousel-item" data-bs-interval="2000">
-				<img src={image5} class="d-block w-100" alt="..." />
-				<div class="carousel-caption">
-					<h5>
-						<a href="https://github.com/1kkiRen/Embeddings-Division" target="_blank" rel="noreferrer"
-							>EmbeddingsDivision</a
-						>
-					</h5>
-					<p>Library for separating and reusing embedding layers in large language models.</p>
 					<p class="links">
-						<a href="https://pypi.org/project/embdiv" target="_blank" rel="noreferrer">PyPI</a>
+						<a href="https://pypi.org/project/TokenizerChanger/" target="_blank" rel="noreferrer"
+							>PyPI</a
+						>
 						<span>·</span>
-						<a href="https://github.com/1kkiRen/Embeddings-Division" target="_blank" rel="noreferrer">GitHub</a>
+						<a href="https://github.com/1kkiRen/Tokenizer-Changer" target="_blank" rel="noreferrer"
+							>GitHub</a
+						>
 					</p>
 				</div>
 			</div>
@@ -69,9 +53,15 @@
 				<img src={image6} class="d-block w-100" alt="..." />
 				<div class="carousel-caption">
 					<h5>CRUD Calendar LLM Chatbot</h5>
-					<p>Telegram assistant that manages schedules and summarizes news with LLM-powered reasoning.</p>
+					<p>
+						Telegram chatbot acting as a calendar manager with up-to-date news summaries on a topic.
+					</p>
 					<p class="links">
-						<span><a href="mailto:1kkiren@mail.ru?subject=Calendar%20LLM" rel="noreferrer">Request demo</a></span>
+						<span
+							><a href="mailto:1kkiren@mail.ru?subject=Calendar%20LLM" rel="noreferrer"
+								>Request demo</a
+							></span
+						>
 					</p>
 				</div>
 			</div>

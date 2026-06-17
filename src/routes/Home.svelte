@@ -6,7 +6,8 @@
 	<div class="content">
 		<h3>Hello, I'm</h3>
 		<h1>Dmitrii Kuzmin</h1>
-		<p>NLP Engineer crafting efficient tooling for large language models.</p>
+		<p>NLP/ML Engineer &middot; NLP Researcher</p>
+		<p>Fine-tuning, inference, and tokenizer research for large language models.</p>
 	</div>
 	<div class="image">
 		<img src={image1} alt="Something went wrong" />

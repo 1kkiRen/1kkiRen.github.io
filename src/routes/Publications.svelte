@@ -5,25 +5,37 @@
 	</div>
 	<div class="papers">
 		<article>
-			<h3>Rethinking Tokenization: Improving Language Model Performance by Modifying the Input Module at Inference</h3>
-			<div class="meta">EACL 2026 · Researcher &amp; Writer · Jun 2025 – present · Under review</div>
+			<h3>A Multi-Aspect Evaluation of Tokenizer Adaptation Methods for LLM on Russian</h3>
+			<div class="meta">AI Journey 2025 · Co-author · 2024 – 2025 · Accepted (poster)</div>
 			<p>
-				Investigates how alternative tokenizations of the same text impact LLM inference quality.
+				Systematic comparison of 4 BPE tokenizer adaptation methods for Russian-language LLMs across
+				3 benchmarks (MERA, MMLU, TA bench) and additional statistical methods. The best method
+				reduces fragmentation from 3.7 to 2.34 (&minus;36.7%).
+			</p>
+			<p class="links">
+				<a href="https://www.mathnet.ru/eng/danma690" target="_blank" rel="noreferrer">mathnet.ru</a
+				>
 			</p>
 		</article>
 		<article>
-			<h3>TokenSubstitution: Cost-efficient Method for LLM Adaptation for the Russian Language</h3>
-			<div class="meta">ACL 2026 · Researcher &amp; Writer · Feb 2025 – present · In progress</div>
+			<h3>Mitigating the Impact of Glitch Tokens via Targeted Retokenization</h3>
+			<div class="meta">AACL 2026 · Co-author · 2025 – 2026 · Under review</div>
 			<p>
-				Proposes cost-effective adaptation approach for improving the performance of LLM generation in target language.
+				An inference-time retokenization method that removes under-trained ("glitch") tokens based
+				on embedding norm/entropy; no model fine-tuning required. Evaluated on 6 models (1.5B – 32B)
+				on MMLU and WMT: +7% improvement in robustness to glitch prompts.
 			</p>
 		</article>
 		<article>
-			<h3>A Multi-Aspect Evaluation of Tokenizer Adaptation Methods for Large Language Models</h3>
-			<div class="meta">Russian AI Journey 2025 · Researcher &amp; Writer · Jun 2024 – Jun 2025 · Accepted</div>
+			<h3>
+				TokenSubstitution: Cost-Efficient Method of Language Adaptation Based on Token
+				"Trained-ness"
+			</h3>
+			<div class="meta">EMNLP 2026 · First author · 2025 – 2026 · Under review</div>
 			<p>
-				Demonstrates tokenizer adaptation as a cost-effective technique by analyzing text quality and token
-				efficiency across diverse benchmarks.
+				A method for adapting an LLM to a new language by replacing weakly trained tokens with
+				tokens of the target language, without full embedding fine-tuning. &minus;15% inference
+				latency while surpassing the original model on the MERA benchmark.
 			</p>
 		</article>
 	</div>

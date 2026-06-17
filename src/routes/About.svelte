@@ -5,8 +5,17 @@
 <section class="about" id="about-section">
 	<div class="title">
 		<h2>About Me</h2>
-		<p>NLP / ML engineer and researcher focused on tokenizer adaptation, LLM fine-tuning, and evaluation.</p>
-		<p>I iterate quickly on open-source model stacks, building efficient training and inference workflows for multilingual use-cases. I enjoy collaborating with cross-functional teams and translating research insights into production impact.</p>
+		<p>
+			NLP/ML engineer with experience in both research and product work on large language models.
+			Specialized in fine-tuning (SFT, LoRA/QLoRA) and inference of open-weight models (Qwen2.5-VL,
+			Kimi2.6), building agentic pipelines (LangGraph, LangChain, LiteLLM), and research on
+			tokenization and LLM uncertainty estimation.
+		</p>
+		<p>
+			Publications include AI Journey 2025 (accepted, poster) and two A*&nbsp;conference papers
+			currently under review. Hands-on with GPU clusters (NVIDIA, MetaX), CUDA, Docker, and Git
+			&mdash; comfortable moving from a notebook to a production serving stack.
+		</p>
 	</div>
 	<div class="content">
 		<div class="image">
